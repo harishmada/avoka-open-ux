@@ -1,0 +1,47 @@
+{
+  "name": "open-ux-react-template",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "@transact-open-ux/core": "^0.1.7",
+    "@transact-open-ux/react": "^0.2.0",
+    "classnames": "^2.2.6",
+    "formik": "1.5.4",
+    "formik-material-ui": "^0.0.16",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "yup": "^0.27.0"
+  },
+  "homepage": ".",
+  "browserslist": [
+    "last 2 version"
+  ],
+  "scripts": {
+    "precommit": "lint-staged",
+    "start": "transact mock --routes mock/routes.json | react-scripts start",
+    "build": "react-scripts build",
+    "build:deploy": "npm run build && transact deploy",
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "react-scripts test --env=jsdom",
+    "lint": "eslint --fix src --ext js,jsx",
+    "format": "prettier --write src/**/*.{js,jsx,json,css,md}",
+    "eject": "react-scripts eject"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,scss,css}": [
+      "eslint --fix",
+      "prettier --config .prettierrc --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.17.0",
+    "react-scripts": "^3.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "buildDir": "build",
+  "domainModelFile": "transact-schema.json",
+  "appDef": {
+    "name": "Transact JS App",
+    "formCode": "transact-js-app",
+    "clientCode": "onboarding",
+    "transactInsights": false,
+    "formVersion": {
+      "versionNumber": "0.1.0",
+      "formDataEncryption": true,
+      "formDataConfig": {
+        "saveChallengeXPath": "//Applicant/LastName"
+      }
+    }
+  }
+}

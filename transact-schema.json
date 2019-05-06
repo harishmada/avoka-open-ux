@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "My Transact Open UX Application",
+  "type": "object",
+  "properties": {
+    "Applicant": {
+      "type": "object",
+      "properties": {
+        "Address": {
+          "$ref": "#/definitions/address"
+        },
+        "FirstName": {
+          "type": "string"
+        },
+        "LastName": {
+          "type": "string"
+        },
+        "Email": {
+          "type": "string",
+          "format": "email"
+        },
+        "Phone": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "address": {
+      "type": "object",
+      "properties": {
+        "Street": {
+          "type": "string"
+        },
+        "UnitNumber": {
+          "type": "string"
+        },
+        "City": {
+          "type": "string"
+        },
+        "State": {
+          "type": "string"
+        },
+        "PostalCode": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Street",
+        "UnitNumber",
+        "City",
+        "State",
+        "PostalCode"
+      ]
+    }
+  }
+}

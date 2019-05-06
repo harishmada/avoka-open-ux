@@ -1,0 +1,70 @@
+{
+  "formLoad": {
+    "formStatus": "Saved",
+    "formData": {
+      "Applicant": {
+        "FirstName": "John",
+        "LastName": "Doe",
+        "CompanyName": "",
+        "Country": "",
+        "Phone": "",
+        "Email": "",
+        "JobTitle": "",
+        "Industry": "",
+        "Address": {
+          "Street": "",
+          "UnitNumber": "",
+          "City": "",
+          "State": "",
+          "PostalCode": ""
+        }
+      }
+    }
+  },
+  "formInit": {
+    "formStatus": "Opened"
+  },
+  "formFunction": {
+    "data": {
+      "idvStatus": "Validated",
+      "callId": "33642240d97edda50a9"
+    }
+  },
+  "formUpdate": {
+    "formStatus": "Saved",
+    "formData": {
+      "Applicant": {
+        "FirstName": "John",
+        "LastName": "Doe",
+        "CompanyName": "",
+        "Country": "",
+        "Phone": "",
+        "Email": "",
+        "JobTitle": "",
+        "Industry": "",
+        "Address": {
+          "Street": "",
+          "UnitNumber": "",
+          "City": "",
+          "State": "",
+          "PostalCode": ""
+        }
+      }
+    }
+  },
+  "formStart": {
+    "formStatus": "Opened"
+  },
+  "formIneligible": {
+    "formStatus": "Abandoned"
+  },
+  "userCancel": {
+    "formStatus": "Abandoned"
+  },
+  "userSave": {
+    "formStatus": "Saved"
+  },
+  "userSubmit": {
+    "formStatus": "Completed"
+  }
+}
